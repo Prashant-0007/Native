@@ -1,0 +1,59 @@
+if(c1 && c2){
+
+}else{
+
+}
+
+Algorithm: 
+	1] Evaluate C1 
+	
+	2] False -> jmp else_block 7]
+	
+	3] Evaluate C2 
+	
+	4] False -> jmp else_block 7]  
+	
+	5] if block 
+	
+	6] jmp	end_of_else 8] 
+	
+	7] else_block 
+	
+	8] end_of_else 
+
+False && (True/False) -> False 
+True && C2 -> C2 
+
+False ^ x == False 
+True ^ x == x 
+
+#-------------------------------------------
+if(C1 || C2){
+
+}else{
+
+}
+
+Theory : 
+True  || x == True 
+False || x == x 
+
+T v x == T 
+F v x == x 
+
+1] Evaluate C1 
+
+2] True-> jmp if_block 5]  
+
+3] Evaluate C2 
+
+4] False -> jmp else_block 7]  
+
+5] if_block 
+
+6] jmp	end_of_else 
+
+7] else_block 
+
+8] end_of_else 
+
