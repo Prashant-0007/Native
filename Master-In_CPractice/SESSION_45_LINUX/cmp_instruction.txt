@@ -1,0 +1,22 @@
+cmp src, dest 
+
+
+movl	$10, %eax
+movl	$0xffffffff, %edx
+cmpl	%eax, %edx 
+jne 
+
+	SIGNED 	UNSIGNED 
+< 	jl 		jb 
+<= 	jle 	jbe 
+> 	jg 		ja
+>= 	jge		jae
+== 	je 		jz 
+!= 	jne 	jnz 
+
+
+
+eflag 
+
+Z 	C 	S 	O 
+
